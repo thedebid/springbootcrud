@@ -20,5 +20,9 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
+    public void deleteStudent(long studentId){
+         studentRepository.deleteById(studentId);
+    }
+
 
 }
